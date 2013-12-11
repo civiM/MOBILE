@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFF00">
+
+    <TextView
+        android:id="@+id/titleApplianceSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Appliance Settings"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/PowerCons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/appliancename"
+        android:layout_below="@+id/appliancename"
+        android:layout_marginTop="20dp"
+        android:text="Power Consumption(watt)"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/powerValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PowerCons"
+        android:layout_below="@+id/PowerCons"
+        android:ems="10"
+        android:text="" >
+        </EditText>
+
+    <TextView
+        android:id="@+id/hoursUsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/powerValue"
+        android:layout_below="@+id/powerValue"
+        android:layout_marginTop="15dp"
+        android:text="Number of Hours/Day"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/noOfHrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hoursUsed"
+        android:layout_below="@+id/hoursUsed"
+        android:ems="10"
+        android:text="" >
+        </EditText>
+
+    <TextView
+        android:id="@+id/costDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/noOfHrs"
+        android:layout_below="@+id/noOfHrs"
+        android:text="Cost per Day:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/costPerDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/costDay"
+        android:layout_below="@+id/costDay"
+        android:ems="10"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/costMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/costPerDay"
+        android:layout_below="@+id/costPerDay"
+        android:text="Cost per Month:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/costPerMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/costMonth"
+        android:layout_below="@+id/costMonth"
+        android:ems="10"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/Appliance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/appliancename"
+        android:layout_below="@+id/titleApplianceSettings"
+        android:text="Appliance Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/appliancename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titleApplianceSettings"
+        android:layout_below="@+id/Appliance"
+        android:ems="10" />
+
+        <requestFocus />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button2"
+            android:layout_toRightOf="@+id/button1"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/costPerMonth"
+            android:layout_below="@+id/costPerMonth"
+            android:layout_marginTop="26dp"
+            android:text="Compute" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button1"
+            android:layout_toLeftOf="@+id/button4"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button3"
+            android:layout_below="@+id/button3"
+            android:text="Back" />
+
+</RelativeLayout>

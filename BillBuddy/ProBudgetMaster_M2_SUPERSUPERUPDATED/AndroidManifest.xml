@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.probudgetmaster_m2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.probudgetmaster_m2.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewElectricSummary"></activity>
+        <activity android:name=".viewWaterSummary"></activity>
+        <activity android:name=".wbc"></activity>
+        <activity android:name=".wbc2"></activity>
+        <activity android:name=".ebfmenu"></activity>
+        <activity android:name=".ebfcalculator"></activity>
+        <activity android:name=".budgeterOverview"></activity>
+        <activity android:name=".newTransaction"></activity>
+        <activity android:name=".expenses"></activity>
+        <activity android:name=".AddFragment"></activity>
+        <activity android:name=".ViewFragment"></activity>
+        <activity android:name=".EditFragment"></activity>
+        <activity android:name=".DeleteFragment"></activity>
+        <activity android:name=".electricmain"></activity>
+        <activity android:name=".ebfMonth"></activity>
+        <activity android:name=".wbcMonth"></activity>
+    </application>
+
+</manifest>
